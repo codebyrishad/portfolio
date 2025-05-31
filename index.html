@@ -11,13 +11,7 @@
   crossorigin="anonymous">
   <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init({ publicKey: "noGJ-L6_IwWrIXvKw",
-      });
-   })();
-</script>
+  </script>
 </head>
 <body>
   <!-- Navbar -->
@@ -26,87 +20,95 @@
       <div class="logo">Mohammed Rishad</div>
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
-        <li><a href="#about">about</a></li>
+        <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">contact </a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
   </nav>
 
-<!-- Home Section -->
-<section id="home">
-  <div class="home-left">
-    <div class="home-content">
-      <h1>Hello, I'm Mohammed Rishad</h1>
-      <h2>Frontend Developer</h2><br>
-      <p>I'm a Web Developer skilled in HTML, CSS, and JavaScript — passionate about building responsive and interactive websites.</p>
-    </div>
-  </div>
-  <div class="home-right">
-    <img src="profileavatarico.png" alt="Animated Profile" class="profile-image">
-  </div>
-</section>
-<!-- About Section -->
-<section id="about">
-  <div class="about-container">
-    <h2>About Me</h2>
-    <p>
-      I'm Mohammed Rishad, a 19-year-old frontend developer with a strong passion for web development.
-      I enjoy creating clean, responsive websites using HTML, CSS, and JavaScript. My journey into
-      coding started out of curiosity and has turned into a full-on passion for building real-world
-      applications and creative user experiences.
-    </p>
-  </div>
-</section>
-
-<!-- Skills Section -->
-<section id="skills">
-  <div class="skills-container">
-    <h2>Skills</h2>
-    <div class="skills-grid">
-      <div class="skill-card">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" />
-        <span>HTML</span>
-      </div>
-      <div class="skill-card">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" />
-        <span>CSS</span>
-      </div>
-      <div class="skill-card">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
-        <span>JavaScript</span>
-      </div>
-      <div class="skill-card">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
-        <span>Python</span>
+  <!-- Home Section -->
+  <section id="home">
+    <div class="home-left">
+      <div class="home-content">
+        <h1>Hello, I'm Mohammed Rishad</h1>
+        <h2>Frontend Developer</h2><br>
+        <p>I'm a Web Developer skilled in HTML, CSS, and JavaScript — passionate about building responsive and interactive websites.</p>
       </div>
     </div>
-  </div>
-</section>
+    <div class="home-right">
+      <img src="profileavatarico.png" alt="Animated Profile" class="profile-image">
+    </div>
+  </section>
+  
+  <!-- About Section -->
+  <section id="about">
+    <div class="about-container">
+      <h2>About Me</h2>
+      <p>
+        I'm Mohammed Rishad, a 19-year-old frontend developer with a strong passion for web development.
+        I enjoy creating clean, responsive websites using HTML, CSS, and JavaScript. My journey into
+        coding started out of curiosity and has turned into a full-on passion for building real-world
+        applications and creative user experiences.
+      </p>
+    </div>
+  </section>
 
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="skills-container">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" />
+          <span>HTML</span>
+        </div>
+        <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" />
+          <span>CSS</span>
+        </div>
+        <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
+          <span>JavaScript</span>
+        </div>
+        <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
+          <span>Python</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<!-- Contact Section -->
-<section id="contact">
-  <div class="contact-container">
-    <h2>Contact Me</h2>
-    <form class="contact-form">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="contact-container">
+      <h2>Contact Me</h2>
+      <form id="contactForm" class="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
 
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
 
-      <button type="submit">Send Message</button>
-    </form>
-  </div>
-</section>
+        <button type="submit" id="submitBtn">Send Message</button>
+      </form>
+    </div>
+  </section>
 
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Mohammed Rishad. All rights reserved.</p>
+  </footer>
 
-<!-- Footer -->
-<footer>
-  <p>© 2025 Mohammed Rishad. All rights reserved.</p>
-</footer>
-
+  <script>
+    // Initialize EmailJS
+    (function() {
+      emailjs.init("noGJ-L6_IwWrIXvKw");
+    })();
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>

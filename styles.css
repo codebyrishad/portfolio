@@ -42,7 +42,7 @@ nav {
 
 /* Home Section */
 #home {
-  height: 600px;
+  min-height: 600px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -76,6 +76,10 @@ nav {
   font-size: 2.5em;
   margin-bottom: 10px;
 }
+.home-content h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
 .home-content p {
   font-size: 1.2em;
 }
@@ -86,7 +90,9 @@ nav {
   color: white;
   padding: 60px 20px;
   text-align: center;
-  height: 500px;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
 }
 .about-container {
   max-width: 800px;
@@ -108,6 +114,10 @@ nav {
   text-align: center;
   padding: 50px 20px;
 }
+.skills-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
 .skills-container h2 {
   font-size: 2em;
   margin-bottom: 30px;
@@ -116,8 +126,6 @@ nav {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 20px;
-  max-width: 800px;
-  margin: auto;
 }
 .skill-card {
   background: #eee;
@@ -148,44 +156,7 @@ nav {
   color: white;
 }
 
-/* Footer */
-footer {
-  background: #222;
-  color: white;
-  text-align: center;
-  padding: 20px;
-}
 /* Contact Section */
-#contact {
-  background: #f2f2f2;
-  color: #222;
-  text-align: center;
-  padding: 60px 20px;
-}
-.contact-container {
-  max-width: 600px;
-  margin: 0 auto;
-}
-.contact-container h2 {
-  font-size: 2em;
-  margin-bottom: 20px;
-}
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.contact-form label {
-  font-size: 1em;
-  margin-bottom: 8px;
-}
-.contact-form input {
-  padding: 10px;
-  width: 100%;
-  max-width: 400px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}/* Contact Section */
 #contact {
   background: #f2f2f2;
   color: #222;
@@ -234,4 +205,15 @@ footer {
 .contact-form button:hover {
   background-color: #00c6ff;
 }
+.contact-form button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
 
+/* Footer */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
